@@ -1,13 +1,13 @@
 package com.example.vehicle_data_validator;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.amazonaws.services.lambda.runtime.Context;
+import com.amazonaws.services.lambda.runtime.RequestHandler;
 
-@SpringBootApplication
-public class VehicleDataValidatorApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(VehicleDataValidatorApplication.class, args);
+public class VehicleDataValidatorApplication  implements RequestHandler<Object, Object> {
+
+	@Override
+	public Object handleRequest(Object object, Context context) {
+		return null;
 	}
-
 }
